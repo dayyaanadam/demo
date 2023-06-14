@@ -10,6 +10,13 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
 
 <title>Liste pilote fzsrbhz</title>
 
+
+
+
+
+
+
+
 <body>
     <div class="content">
         <?php
@@ -47,6 +54,12 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
         });
         </script>
     
+
+
+
+
+
+
         
         <ul class="responsive-table">
             <!-- <li class="table-header">
@@ -71,7 +84,12 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
                         <p class="col" style="font-size: 25px;"><?php echo $el[1] ?></p>
                         <p class="col" style="font-size: 25px;"><?php echo $el[2] ?></p>
                         <p class="col" style="font-size: 25px;"><?php echo $el[3] ?></p>
-                    </div>  
+    
+    
+    
+    
+    
+                      </div>  
                     <div class="col options">
                         <form method="get" action="formUpdatePilote.php">
                             <button class="fabutton">
@@ -105,6 +123,11 @@ $data = $conn->query($query)->fetchAll(PDO::FETCH_BOTH);
             // Fonction de recherche en temps réel
             $('#search-input').on('keyup', function() {
                 var value = $(this).val().toLowerCase();
+   
+   
+   
+   
+   
                 $('.table-row').filter(function() {
                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
